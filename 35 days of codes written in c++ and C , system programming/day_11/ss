@@ -1,0 +1,8 @@
+
+                   344 rno cgpa next                            
+           start       111 8.2  726                                   
+                               |	                               
+			       |                              
+			       	726  rno  cgpa  next------>         800 rno  cgpa  next
+                               prev  115   9.2  800                      127  7.7  null
+
