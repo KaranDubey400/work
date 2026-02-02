@@ -1,0 +1,73 @@
+#include <iostream>
+#include <cstdlib>
+#include <string>
+
+using namespace std;
+
+
+template <class T1>
+class calcu {
+private:
+    T1 var1;
+    T1 var2;
+
+public:
+    calcu(T1 a, T1 b) {
+        var1 = a;
+        var2 = b;
+    }
+
+  
+    void operator+() {
+        cout << var1 + var2 << endl;
+    }
+
+    void operator-() {
+        cout << var1 - var2 << endl;
+    }
+
+    void operator*() {
+        cout << var1 * var2 << endl;
+    }
+
+   
+    void operator/(int) {
+        if (var2 != 0) {
+            cout << var1 / var2 << endl;
+        } else {
+            cout << "Error: Division by zero" << endl;
+        }
+    }
+};
+
+int main(int ac, char **av) {
+   
+    if (ac < 4) {
+        cout << "not correct input" << endl;
+        cout << " ./program <num1> <num2> <operator>" << endl;
+        return 1;
+    }
+
+    calcu<int> a(atoi(av[1]), atoi(av[2]));
+
+    
+    char ch = av[3][0];
+
+    if (ch == '+') {
+        +a;
+    } 
+    else if (ch == '-') {
+        -a; 
+    } 
+    else if (ch == '*') {
+        *a; 
+    } 
+    else if (ch == '/') {
+        a / 1; 
+    } 
+    else {
+        cout << "invalid operator" << endl;
+    }
+
+    return 0;
+}
