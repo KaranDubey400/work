@@ -24,7 +24,7 @@ A data processing tool utilizing the standard template Library (STL) to manage a
 ### 3. Student Course Management System
 A complete management utility for academic tracking, demonstrating oops principles and STL usage.
 
-## 🛠 Technical Concepts Covered
+##  technical Concepts Covered
 
 ### System Programming & Concurrency
 *   **Multi-threading**: Thread creation, detachment, and parameter passing (`pthread`, `std::thread`).
@@ -51,7 +51,7 @@ A complete management utility for academic tracking, demonstrating oops principl
 *   **/Oops code that i wrote**: Dedicated exercises for mastering OOP concepts (Constructors, Inheritance).
 *   **/codes that i wrote...**: Application-level projects using STL and Algorithms (Payroll, Course Management).
 
-## 💡 How to Build & Run
+##  How to Build & Run
 i used Ubuntu linux , 
 Most C projects in this repo can be compiled using GCC/Clang:
 ```bash
